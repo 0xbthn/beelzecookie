@@ -23,3 +23,4 @@ venv/
 .env.production
 simple_test.py
 test_example.py
+dist/
