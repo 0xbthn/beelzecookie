@@ -61,17 +61,17 @@ def read_requirements():
 
 setup(
     name="beelzecookie",
-    version="1.0.0",
+    version="1.0.2",
     author="0xbthn",
     description="Cookie Bomb Vulnerability Scanner I want to be a cookie.",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    packages=find_packages(),
+    packages=['beelzecookie'],
     install_requires=read_requirements(),
     python_requires=">=3.7",
     entry_points={
         'console_scripts': [
-            'beelzecookie=beelzecookie.cli:main',
+            'beelzecookie=cli:main',
         ],
     },
     classifiers=[
